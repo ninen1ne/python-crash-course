@@ -1,0 +1,7 @@
+In Python you can create a function that does one specific task.
+It's help you to keep your logical process behind and you can focus on high level programming.
+
+In Python you can create a class to model a problems as an objects a class has 4 important concepts
+such as inheritance, encapsulation, polymorphism, abstraction.
+
+In Python you can create a variable without declare it data type.
