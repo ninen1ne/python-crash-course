@@ -1,0 +1,12 @@
+names = ['Nine','Kung','Tor','Flueng','Poom','Win','Park','Pai','Prach']
+names.append('Pure') 
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+print(names[4])
+print(names[5])
+print(names[6])
+print(names[7])
+print(names[8])
+print(names[9])

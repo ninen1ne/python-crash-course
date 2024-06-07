@@ -1,15 +1,20 @@
-def make_car(manufacturer, model, **other_info):
-    """Describe a car in a simple term. :D"""
-    car_profile = {}
-    car_profile['manufacturer'] = manufacturer
-    car_profile['model'] = model
-    for key, value in other_info.items():
-        car_profile[key] = value
 
+# 22/3/2024
+
+def make_car(manufacturer, model, **car_info):
+    """receive information of car and store in dictionary"""
+    
+    # create empty list hold value.
+    car_profile = {}
+    car_profile['manufacturer'] = manufacturer.title()
+    car_profile['model'] = model.title()
+
+    for key, value in car_info.items():
+        car_profile[key] = value
     return car_profile
 
-car = make_car('subaru', 'outback', color='blue', tow_package=True)
-print(car)
+my_outback = make_car('subaru', 'outback', color='blue', tow_package=True)
+print(my_outback)
 
-car = make_car('honda', 'accord', year=1991, color='white',headlights='popup')
-print(car)
+my_volkswagen = make_car('volkswagen group', 'virtus', color='red', year=2018)
+print(my_volkswagen)

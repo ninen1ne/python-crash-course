@@ -1,19 +1,21 @@
-# 6/5/2024
-def make_album(artist, title, numberOfTrack=None):
-    """return a information about album."""
-    album = {
+def make_album(artist, title, number_of_tracks=''):
+    """Build dictionary containing information about an album."""
+    album_info = {
         'artist': artist,
         'title': title,
-    }
-    if numberOfTrack:
-        album['numberOfTrack'] = numberOfTrack
-    return album
+        }
+    if number_of_tracks:
+        album_info['number_of_tracks'] = number_of_tracks
+    return album_info
 
-album = make_album('Taylor Swift', 'Fearless', 13)
+album = make_album('taylor swift', 'fearless', 13)
 print(album)
+print("\n")
 
-album = make_album('Westlife', 'Coast to Coast')
+album = make_album('queen', 'news of the world',11)
 print(album)
+print("\n")
 
-album = make_album('Taylor Swift', '1989(Taylor\'s Version)')
+album = make_album('bon jovi', 'crush', number_of_tracks=11)
 print(album)
+print("\n")

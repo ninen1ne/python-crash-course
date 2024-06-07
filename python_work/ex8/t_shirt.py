@@ -1,9 +1,17 @@
-# 6/5/2024
+#This program receive customer order about t-shirt size and message they want to screen on it.
+#19/3/2024
 
-def make_shirt(size, sentence):
-    """recieve size and sentence and print summarize 2 of them."""
-    print(f'\nsize of t-shirt is: {size}.')
-    print(f'sentence that will be screen on is >> {sentence}.')
 
-make_shirt('L', 'E = mc^2')
-make_shirt(sentence='You are my special', size='XXL')
+
+
+def make_shirt(size, message):
+    """Describe size of shirt and tell customer."""
+    print("We have recieve your order: " + size.title())
+    print("and screen the following sentence: " + message)
+
+#Call the function using positional arguments. (argument should type in ordered refer to definition of make_shirt function.)
+make_shirt('l', 'I love Yuu')
+
+#Call the function using keywork arguments.
+make_shirt(message='I love Yuu', size='l')
+
